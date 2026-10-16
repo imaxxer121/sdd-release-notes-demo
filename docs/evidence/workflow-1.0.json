@@ -1,0 +1,484 @@
+{
+  "schema": 1,
+  "date": "2026-10-16",
+  "scope": "Completed installed SDD 1.0 workflow in the independent sdd-release-notes-demo target",
+  "result": "PASS",
+  "baseline_commit": "fc0c152",
+  "marketplace": {
+    "public_repository": "https://github.com/imaxxer121/dev-digest-ai-marketplace",
+    "historical_install_commit": "15af4ceeff1e26e959649e9173f6cb651c882fe8",
+    "sanitized_install_source": "https://github.com/imaxxer121/dev-digest-ai-marketplace/blob/main/docs/evidence/install-1.0.json"
+  },
+  "installation": {
+    "claude": {
+      "runtime": "Claude Code CLI 2.1.301, installation only; no Claude inference",
+      "scope": "Installation and dependency resolution only; no Claude inference",
+      "outcome": "ok (+3 dependencies)",
+      "plugins": [
+        {
+          "id": "architecture-review@dev-digest-ai-marketplace",
+          "cache_version": "1.0.0-15af4ceeff1e",
+          "manifest_version": "1.0.0",
+          "enabled": true,
+          "scope": "project",
+          "project_enabled": true
+        },
+        {
+          "id": "engineering-paved-path@dev-digest-ai-marketplace",
+          "cache_version": "1.0.0-15af4ceeff1e",
+          "manifest_version": "1.0.0",
+          "enabled": true,
+          "scope": "project",
+          "project_enabled": true
+        },
+        {
+          "id": "research-tools@dev-digest-ai-marketplace",
+          "cache_version": "1.0.0-15af4ceeff1e",
+          "manifest_version": "1.0.0",
+          "enabled": true,
+          "scope": "project",
+          "project_enabled": true
+        },
+        {
+          "id": "sdd-engineering@dev-digest-ai-marketplace",
+          "cache_version": "1.0.0",
+          "manifest_version": "1.0.0",
+          "enabled": true,
+          "scope": "project",
+          "project_enabled": true
+        }
+      ],
+      "evidence": "Historical root capture l08-claude-installed-1.0.json and sanitized marketplace docs/evidence/install-1.0.json; personal paths omitted"
+    },
+    "codex": {
+      "receipt_source": "work/course-tools/codex-plugin-installed.json",
+      "plugins": [
+        {
+          "id": "engineering-paved-path@dev-digest-ai-marketplace",
+          "version": "1.0.0",
+          "installed": true,
+          "enabled": true
+        },
+        {
+          "id": "research-tools@dev-digest-ai-marketplace",
+          "version": "1.0.0",
+          "installed": true,
+          "enabled": true
+        },
+        {
+          "id": "architecture-review@dev-digest-ai-marketplace",
+          "version": "1.0.0",
+          "installed": true,
+          "enabled": true
+        },
+        {
+          "id": "sdd-engineering@dev-digest-ai-marketplace",
+          "version": "1.0.0",
+          "installed": true,
+          "enabled": true
+        }
+      ],
+      "runtime_adapter": "Codex subscribed CLI for planning; delegated Codex roles explicitly read actual installed-cache profiles. Native implicit plugin loading was disabled in the controlled planning trial.",
+      "local_role_copies": {
+        ".claude/agents": false,
+        ".claude/skills": false,
+        ".codex/agents": false
+      },
+      "current_cache_state": "Not asserted: later cache rotation/update belongs to the separate 1.1 task."
+    },
+    "documentation_context": [
+      {
+        "retained_source": "work/course-tools/docs/codex-subagents.md",
+        "scope": "Runtime documentation, not execution evidence"
+      },
+      {
+        "retained_source": "work/course-tools/docs/codex-plugins.md",
+        "scope": "Plugin documentation, not execution evidence"
+      },
+      {
+        "retained_source": "work/course-tools/docs/codex-marketplaces.md",
+        "scope": "Marketplace documentation, not execution evidence"
+      }
+    ]
+  },
+  "topology": [
+    "Actual CLI spec-creator -> actual CLI implementation-planner (retained treatment-3 / blind A)",
+    "Installed research-tools:researcher read-only source research",
+    "One delegated implementer T1 formatter -> T2 CLI/tests",
+    "Root npm test and diff whitespace verification",
+    "Independent installed architecture gate || independent installed plan-verifier gate"
+  ],
+  "planning": {
+    "trial": "treatment-3",
+    "blind_label": "A",
+    "plugin_version": "1.0.0",
+    "model": "gpt-6.1-sol",
+    "runtime": "Codex subscribed CLI, controlled context adapter reads actual installed cache",
+    "profile_sources": "Actual installed cache; recorded by the retained controlled adapter protocol",
+    "plugin_manifest_sha256": "4d44e362fc7b4565b4577f1d588cf585ee5a8326c5ef8ebd9948b3c3d2c27d0b",
+    "profile_sha256": {
+      "spec-creator": "141e10e4eb5095a9393d46d5592e13ccc4612e78baa68acf4a0860092a09baec",
+      "implementation-planner": "94a74ada783fbb1a9fd6c4d09bee6c0aa0862acde1a48877ca24037b41235bd0"
+    },
+    "native_implicit_loading": false,
+    "original_proposals_unchanged": {
+      "spec_json": true,
+      "plan_json": true,
+      "spec_markdown": true,
+      "plan_markdown": true
+    },
+    "comparison_method": "JSON parsed contents equal the original CLI stage result objects; Markdown equals retained original proposal text after trimming only surrounding whitespace.",
+    "published_artifacts": [
+      "specs/limit/spec.md",
+      "specs/limit/spec.json",
+      "specs/limit/plan.md",
+      "specs/limit/plan.json"
+    ],
+    "stages": [
+      {
+        "stage": "spec-creator",
+        "exit": 0,
+        "signal": null,
+        "timed_out": false,
+        "duration_ms": 50773,
+        "input_tokens": 10961,
+        "cached_input_tokens": 0,
+        "output_tokens": 2593,
+        "reported_turns": 1,
+        "model_generated_tool_calls": 0,
+        "native_cli_invocations": 1,
+        "actual_http_request_count": null,
+        "raw_event_sha256": "973b0329c4c4a75f0c10b42a860ec13f56dc39e9948284042cb094191a350f92",
+        "prompt_utf8_bytes": 5768
+      },
+      {
+        "stage": "implementation-planner",
+        "exit": 0,
+        "signal": null,
+        "timed_out": false,
+        "duration_ms": 58069,
+        "input_tokens": 13340,
+        "cached_input_tokens": 0,
+        "output_tokens": 2256,
+        "reported_turns": 1,
+        "model_generated_tool_calls": 0,
+        "native_cli_invocations": 1,
+        "actual_http_request_count": null,
+        "raw_event_sha256": "5c29a2e6230ee0b7d212ca1162e41b4bae75420f177bd962235688e4d31d182f",
+        "prompt_utf8_bytes": 16491
+      }
+    ],
+    "planning_only_totals": {
+      "input_tokens": 24301,
+      "cached_input_tokens": 0,
+      "output_tokens": 4849,
+      "duration_ms": 108842,
+      "billed_usd": null
+    },
+    "historical_experiment_gate": {
+      "success": false,
+      "errors": [
+        "task ownership/checks"
+      ],
+      "preserved": true,
+      "explanation": "The original automatic checker rejected an empty owned_paths list on the intentionally read-only T3 reviewer task. Later independent gates inspected the explicit owner/read-only contract and passed it; the historical experiment record was not rewritten."
+    }
+  },
+  "research": {
+    "profile": "research-tools/1.0.0/agents/researcher.md",
+    "profile_sha256": "1276d942c09f2200c43386d11138bae29b93d5d1ed8327d7738ce5f8debeb51b",
+    "evidence_scope": "Actual delegated read-only researcher handoff from the installed profile",
+    "discoveries": [
+      {
+        "fact": "Original formatter validates every entry before formatting; limiting must preserve malformed suffix rejection.",
+        "source": "src/format.mjs",
+        "current_lines": [
+          3,
+          6
+        ]
+      },
+      {
+        "fact": "Titles are arbitrary strings and can contain newlines; limits must count entries, not output lines.",
+        "source": "test/cli.test.mjs",
+        "current_lines": [
+          75,
+          77
+        ]
+      },
+      {
+        "fact": "Argument/stdin/process handling belongs to CLI; formatting stays pure.",
+        "source": "AGENTS.md",
+        "current_lines": [
+          3,
+          6
+        ]
+      }
+    ]
+  },
+  "implementation": {
+    "owner": "One delegated Codex implementer, sequential T1 then T2",
+    "distinct_installed_implementer_profile_claimed": false,
+    "scope": [
+      "src/format.mjs",
+      "test/format.test.mjs",
+      "src/cli.mjs",
+      "test/cli.test.mjs"
+    ],
+    "baseline_diff_scope_provenance": "Root reports four changed product/test files from baseline fc0c152.",
+    "implementer_bash_or_test_execution": false,
+    "test_execution_owner": "Root",
+    "behavior": "Separate --limit N, ASCII decimal 1..100, leading zeros allowed; invalid/missing/duplicate arguments fail before stdin; full-array validation precedes stable prefix selection; default/empty/newline/offline behavior retained."
+  },
+  "verification": {
+    "command": "npm test",
+    "package_script": "node --test",
+    "executed_by": "Root",
+    "reported_at_utc": "2026-10-16 14:12 UTC (minute precision)",
+    "passed": 45,
+    "failed": 0,
+    "skipped": 0,
+    "reported_duration_seconds": 2.578,
+    "diff_check": {
+      "command": "git diff --check",
+      "result": "PASS",
+      "executed_by": "Root"
+    },
+    "evidence_provenance": "Trusted root execution report; this documentation task did not execute tests or shell commands.",
+    "architecture_gate": {
+      "profile": "architecture-review/1.0.0/agents/architecture-reviewer.md",
+      "profile_sha256": "612cf83c04b80d0cac60cb24822fef2e7eff39b0c890d867afbfe434747c1907",
+      "result": "PASS",
+      "source": "Independent installed_architecture_gate report supplied by root"
+    },
+    "plan_verifier_gate": {
+      "profile": "sdd-engineering/1.0.0/agents/plan-verifier.md",
+      "profile_sha256": "a028a98d7a26f6cec01b1f4c56b2d3634fc98f05177df533052dc226d4d083e1",
+      "result": "PASS",
+      "source": "Independent installed profile read and AC matrix; no shell/tests and no unfinished architecture conclusions consulted"
+    }
+  },
+  "acceptance": [
+    {
+      "id": "AC-01",
+      "result": "PASS",
+      "source": [
+        "src/format.mjs:6-7",
+        "src/cli.mjs:19-20"
+      ],
+      "tests": [
+        "test/cli.test.mjs:49-64",
+        "test/format.test.mjs:12-15"
+      ]
+    },
+    {
+      "id": "AC-02",
+      "result": "PASS",
+      "source": [
+        "src/format.mjs:6",
+        "src/cli.mjs:20"
+      ],
+      "tests": [
+        "test/cli.test.mjs:66-72",
+        "test/cli.test.mjs:139-147",
+        "test/format.test.mjs:4-7"
+      ]
+    },
+    {
+      "id": "AC-03",
+      "result": "PASS",
+      "source": [
+        "src/cli.mjs:10-18",
+        "src/cli.mjs:21-23"
+      ],
+      "tests": [
+        "test/cli.test.mjs:23-46",
+        "test/cli.test.mjs:85-124"
+      ]
+    },
+    {
+      "id": "AC-04",
+      "result": "PASS",
+      "source": [
+        "src/cli.mjs:5-11"
+      ],
+      "tests": [
+        "test/cli.test.mjs:94-95",
+        "test/cli.test.mjs:110-124"
+      ]
+    },
+    {
+      "id": "AC-05",
+      "result": "PASS",
+      "source": [
+        "src/cli.mjs:20"
+      ],
+      "tests": [
+        "test/cli.test.mjs:80-82",
+        "test/format.test.mjs:5",
+        "test/format.test.mjs:16"
+      ]
+    },
+    {
+      "id": "AC-06",
+      "result": "PASS",
+      "source": [
+        "src/format.mjs:3-6"
+      ],
+      "tests": [
+        "test/cli.test.mjs:127-136",
+        "test/format.test.mjs:18-21"
+      ]
+    },
+    {
+      "id": "AC-07",
+      "result": "PASS",
+      "source": [
+        "AGENTS.md:3-6",
+        "src/cli.mjs:1-24",
+        "src/format.mjs:1-8",
+        "package.json:1-10"
+      ],
+      "evidence": "Independent source inspection: pure formatter, process boundary in CLI, no network calls or added dependencies."
+    },
+    {
+      "id": "AC-08",
+      "result": "PASS",
+      "phase": "Planning delivery, completed before separately authorized implementation",
+      "source": [
+        "specs/limit/spec.md:38",
+        "specs/limit/plan.md:15-20"
+      ],
+      "evidence": "Unchanged original blind-A proposals; root confirms planning-only delivery preceded user authorization for the four-file implementation."
+    }
+  ],
+  "artifact_digests": [
+    {
+      "path": "src/cli.mjs",
+      "sha256": "cd4a806e5e74d1036ffde99a30caed29865bf6362cae66e4f1b5b41ce9bf4dc8",
+      "bytes": 955
+    },
+    {
+      "path": "src/format.mjs",
+      "sha256": "4640f6d7bf3713bc1a3ed1b2a088d79447a60481cae203597911d5046a3adeab",
+      "bytes": 437
+    },
+    {
+      "path": "test/cli.test.mjs",
+      "sha256": "ea0250c0f5d949b826669fe9644b1fc8b9a67accadeb3b01e5f8266851954c55",
+      "bytes": 6584
+    },
+    {
+      "path": "test/format.test.mjs",
+      "sha256": "c5452b8726f3ae7aa81e48b3f0f8fe7204e04bde2af7e8dd6b1ec6400245e94b",
+      "bytes": 2296
+    },
+    {
+      "path": "specs/limit/spec.md",
+      "sha256": "b17990d4887415b35fe363cad1cbdcb35938202fbeffa07208d03f8f8383fcfa",
+      "bytes": 6658
+    },
+    {
+      "path": "specs/limit/plan.md",
+      "sha256": "d815f5d45d3ac653e3dce8c5eed8f3a627f7c245427a5a431686e8c18fc54635",
+      "bytes": 7416
+    },
+    {
+      "path": "specs/limit/spec.json",
+      "sha256": "57a9d6ab20bb48c861a8adf0ab8a8aef951e96af83d497e5ebc5275b148be1ec",
+      "bytes": 10743
+    },
+    {
+      "path": "specs/limit/plan.json",
+      "sha256": "e56ed343ecf2ccbbe96e3d8f516934caca9ae71e395c921bb70859d69182a8c7",
+      "bytes": 9047
+    }
+  ],
+  "accounting": {
+    "scope": "Full delegated workflow; measured planning CLI stages above are a separate partial scope",
+    "collaboration_workers": [
+      {
+        "role": "researcher",
+        "model": null,
+        "provider": null,
+        "input_tokens": null,
+        "output_tokens": null,
+        "cache_read_tokens": null,
+        "cache_creation_tokens": null,
+        "tool_calls": null,
+        "duration_ms": null,
+        "billed_usd": null,
+        "reason": "Exact model identity and complete per-worker usage/tool/timing counters were not exposed by the collaboration runtime; inherit is not model provenance."
+      },
+      {
+        "role": "implementer",
+        "model": null,
+        "provider": null,
+        "input_tokens": null,
+        "output_tokens": null,
+        "cache_read_tokens": null,
+        "cache_creation_tokens": null,
+        "tool_calls": null,
+        "duration_ms": null,
+        "billed_usd": null,
+        "reason": "Exact model identity and complete per-worker usage/tool/timing counters were not exposed by the collaboration runtime; inherit is not model provenance."
+      },
+      {
+        "role": "architecture-reviewer",
+        "model": null,
+        "provider": null,
+        "input_tokens": null,
+        "output_tokens": null,
+        "cache_read_tokens": null,
+        "cache_creation_tokens": null,
+        "tool_calls": null,
+        "duration_ms": null,
+        "billed_usd": null,
+        "reason": "Exact model identity and complete per-worker usage/tool/timing counters were not exposed by the collaboration runtime; inherit is not model provenance."
+      },
+      {
+        "role": "plan-verifier",
+        "model": null,
+        "provider": null,
+        "input_tokens": null,
+        "output_tokens": null,
+        "cache_read_tokens": null,
+        "cache_creation_tokens": null,
+        "tool_calls": null,
+        "duration_ms": null,
+        "billed_usd": null,
+        "reason": "Exact model identity and complete per-worker usage/tool/timing counters were not exposed by the collaboration runtime; inherit is not model provenance."
+      }
+    ],
+    "totals": {
+      "input_tokens": null,
+      "output_tokens": null,
+      "cache_read_tokens": null,
+      "cache_creation_tokens": null,
+      "tool_calls": null,
+      "wall_clock_ms": null,
+      "parallelism_factor": null,
+      "billed_usd": null
+    },
+    "reason": "Incomplete collaboration observability; do not add partial CLI planning counters to unknown workers or infer subscription billed USD."
+  },
+  "manual_retrospective": {
+    "explicitly_requested_for_course": true,
+    "automatic_hook": false,
+    "observed_process": "Sequential planning and implementation; two independent read-only gates after root verification.",
+    "discoveries": [
+      "Full-array validation must precede slicing.",
+      "Count entries rather than rendered lines because titles can contain newlines.",
+      "A read-only reviewer legitimately owns no writable paths; the old automated trial checker did not distinguish that role."
+    ],
+    "recommendations": [
+      "Keep open-stdin argument-failure and malformed-suffix tests in future CLI plans.",
+      "Make future ownership gates distinguish read-only reviewers from writable tasks, without rewriting historical outcomes.",
+      "Collect per-worker counters only when actually exposed; preserve nulls and scope partial CLI metrics."
+    ],
+    "source_fixes_applied_by_documentation_task": false
+  },
+  "pending_separate_work": {
+    "plugin_1_1_update_and_rollback": "Separate root-owned task; not certified complete by this historical 1.0 report."
+  },
+  "sanitization": "Only relative teaching paths, public repository sources, role names, hashes and scoped measurements are included. No personal absolute paths, auth values, raw private prompts or session transcripts."
+}
