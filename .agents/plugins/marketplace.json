@@ -1,0 +1,10 @@
+{
+  "name": "dev-digest-ai-marketplace",
+  "interface": {"displayName": "SDD Engineering · pinned consumer"},
+  "plugins": [
+    {"name": "engineering-paved-path", "source": {"source": "git-subdir", "url": "https://github.com/imaxxer121/dev-digest-ai-marketplace.git", "path": "plugins/engineering-paved-path", "sha": "c3f52eb7459220f81a844abd69d191c3c2ced049"}},
+    {"name": "research-tools", "source": {"source": "git-subdir", "url": "https://github.com/imaxxer121/dev-digest-ai-marketplace.git", "path": "plugins/research-tools", "sha": "c3f52eb7459220f81a844abd69d191c3c2ced049"}},
+    {"name": "architecture-review", "source": {"source": "git-subdir", "url": "https://github.com/imaxxer121/dev-digest-ai-marketplace.git", "path": "plugins/architecture-review", "sha": "c3f52eb7459220f81a844abd69d191c3c2ced049"}},
+    {"name": "sdd-engineering", "source": {"source": "git-subdir", "url": "https://github.com/imaxxer121/dev-digest-ai-marketplace.git", "path": "plugins/sdd-engineering", "sha": "c3f52eb7459220f81a844abd69d191c3c2ced049"}}
+  ]
+}

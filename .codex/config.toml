@@ -1,0 +1,17 @@
+[plugins."sdd-engineering@dev-digest-ai-marketplace"]
+enabled = true
+[plugins."engineering-paved-path@dev-digest-ai-marketplace"]
+enabled = true
+[plugins."research-tools@dev-digest-ai-marketplace"]
+enabled = true
+[plugins."architecture-review@dev-digest-ai-marketplace"]
+enabled = true
+
+[plugins."sdd-engineering@dev-digest-ai-stable"]
+enabled = false
+[plugins."engineering-paved-path@dev-digest-ai-stable"]
+enabled = false
+[plugins."research-tools@dev-digest-ai-stable"]
+enabled = false
+[plugins."architecture-review@dev-digest-ai-stable"]
+enabled = false
