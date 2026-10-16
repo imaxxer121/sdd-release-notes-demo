@@ -70,4 +70,3 @@ Both gates must pass independently. Reviewers own no product paths. Allow at mos
 | AC-06 | T1, T2, T3 | Malformed entry beyond selected prefix still rejected. |
 | AC-07 | T1, T2, T3 | Independent boundary, import and offline-operation review. |
 | AC-08 | T0, T3 | Proposed plan only, real paths and `npm test`; no execution, implementation or publication claimed. |
-
